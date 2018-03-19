@@ -1,0 +1,16 @@
+[alias]
+	s = status
+	l = log
+	b = branch
+	co = checkout
+	g = git
+  f = fetch
+  p = push origin
+  pu = pull origin
+  com = commit -m
+[core]
+	pager = vimpager
+[color]
+	ui = true
+[http]
+	postBuffer = 524288000
