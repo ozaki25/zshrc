@@ -194,5 +194,4 @@ alias tmmemo="tmux -2 new -s memo || tmux -2 a -t memo"
 alias cdre="cd ~/Applications/react"
 alias tmre="tmux -2 new -s react || tmux -2 a -t react"
 
-alias tmnew="tmux -2 new -s"
-alias tm="tmux -2 a -t"
+alias tm='() { tmux -2 new -s $1 || tmux -2 a -t $1 }'
