@@ -1,16 +1,19 @@
 [alias]
-	s = status
-	l = log
-	b = branch
-	co = checkout
-	g = git
+  s = status
+  l = log
+  b = branch
+  co = checkout
+  g = git
   f = fetch
   p = push origin
   pu = pull origin
+  pm = push origin master
+  pum = pull origin master
   com = commit -m
 [core]
-	pager = vimpager
+  pager = vimpager
+  editor = /usr/local/bin/emacs
 [color]
-	ui = true
+  ui = true
 [http]
-	postBuffer = 524288000
+  postBuffer = 524288000
