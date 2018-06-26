@@ -195,3 +195,5 @@ alias cdre="cd ~/Applications/react"
 alias tmre="tmux -2 new -s react || tmux -2 a -t react"
 
 alias tm='() { tmux -2 new -s $1 || tmux -2 a -t $1 }'
+
+alias tmls='tmux ls'
