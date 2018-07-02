@@ -184,6 +184,8 @@ export PATH=$PATH:$HOME/flutter/bin
 
 alias shs="/usr/bin/python -m SimpleHTTPServer"
 
+alias chrm="open /Applications/Google\ Chrome.app
+
 alias rn="react-native"
 alias rna="react-native run-android"
 alias rni="react-native run-ios"
