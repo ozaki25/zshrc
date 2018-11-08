@@ -184,11 +184,13 @@ export PATH=$PATH:$HOME/flutter/bin
 
 alias shs="/usr/bin/python -m SimpleHTTPServer"
 
-alias chrm="open /Applications/Google\ Chrome.app"
+alias chrm="open /Applications/Google\ Chrome\ Canary.app"
 
 alias rn="react-native"
 alias rna="react-native run-android"
 alias rni="react-native run-ios"
+
+alias cdapp="cd ~/Applications"
 
 alias cdmemo="cd ~/Desktop/memo"
 alias tmmemo="tmux -2 new -s memo || tmux -2 a -t memo"
@@ -196,6 +198,17 @@ alias tmmemo="tmux -2 new -s memo || tmux -2 a -t memo"
 alias cdre="cd ~/Applications/react"
 alias tmre="tmux -2 new -s react || tmux -2 a -t react"
 
+alias cdpress="cd ~/Applications/vuepress"
+
 alias tm='() { tmux -2 new -s $1 || tmux -2 a -t $1 }'
 
 alias tmls='tmux ls'
+
+alias vuepress-init='() { git clone git@github.com:ozaki25/vuepress_template.git $1 && cd $1 && rm -rf .git README.md && git init && git add . && git commit -m "init" }'
+
+
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* }
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export PATH=$PATH:/usr/local/Cellar/rabbitmq/3.7.7_1/sbin
