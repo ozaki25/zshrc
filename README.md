@@ -9,3 +9,10 @@ git config --global alias.pm 'push origin master'
 git config --global alias.pum 'pull origin master'
 git config --global alias.com 'commit -m'
 ```
+
+```
+defaults write -g InitialKeyRepeat -int 10
+defaults read -g InitialKeyRepeat
+defaults write -g KeyRepeat -int 1
+defaults read -g KeyRepeat
+```
