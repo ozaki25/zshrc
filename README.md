@@ -16,3 +16,8 @@ defaults read -g InitialKeyRepeat
 defaults write -g KeyRepeat -int 1
 defaults read -g KeyRepeat
 ```
+
+```
+defaults write com.apple.finder AppleShowAllFiles TRUE
+killall Finder
+```
