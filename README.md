@@ -21,3 +21,7 @@ defaults read -g KeyRepeat
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
 ```
+
+```
+chsh -s /bin/zsh
+```
