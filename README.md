@@ -1,4 +1,5 @@
 ```
+git config --global alias.s status
 git config --global alias.l log
 git config --global alias.b branch
 git config --global alias.co checkout
