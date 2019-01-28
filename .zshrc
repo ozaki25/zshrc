@@ -208,6 +208,8 @@ alias vuepress-init='() { git clone git@github.com:ozaki25/vuepress_template.git
 
 alias gif='() { ffmpeg -i $1 -vf scale=640:-1 -r 10 $2 }'
 
+alias mp4='() { ffmpeg -i $1 $2 }'
+
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* }
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
