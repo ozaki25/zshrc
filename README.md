@@ -9,6 +9,9 @@ git config --global alias.pu 'pull origin'
 git config --global alias.pm 'push origin master'
 git config --global alias.pum 'pull origin master'
 git config --global alias.com 'commit -m'
+git config --global alias.m 'merge'
+git config --global alias.amend 'commit --amend'
+
 ```
 
 ```
