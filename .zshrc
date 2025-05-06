@@ -1,5 +1,3 @@
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 # -------------------------------------
 # 環境変数
 # -------------------------------------
@@ -12,8 +10,10 @@ export LC_ALL=en_US.UTF-8
 export EDITOR=/usr/local/bin/emacs
 
 # ページャ
-export PAGER=/usr/local/bin/vimpager
-export MANPAGER=/usr/local/bin/vimpager
+# export PAGER=/usr/local/bin/vimpager
+# export MANPAGER=/usr/local/bin/vimpager
+export PAGER=/usr/bin/less
+export MANPAGER=/usr/bin/less
 
 # -------------------------------------
 # zshのオプション
@@ -155,10 +155,10 @@ function title {
 export HISTFILE=${HOME}/.zsh_history
 
 # メモリに保存される履歴の件数
-export HISTSIZE=1000
+export HISTSIZE=10000
 
 # 履歴ファイルに保存される履歴の件数
-export SAVEHIST=100000
+export SAVEHIST=1000000
 
 # 重複を記録しない
 setopt hist_ignore_dups
@@ -215,3 +215,12 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* }
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export PATH=$PATH:/usr/local/Cellar/rabbitmq/3.7.7_1/sbin
+
+alias emacs='emacs -nw'
+
+# export PATH="/usr/local/opt/node@12/bin:$PATH"
+# export PATH="/usr/local/opt/node@14/bin:$PATH"
+# export PATH="/usr/local/opt/node@16/bin:$PATH"
+# export PATH="/usr/local/opt/node@18/bin:$PATH"
+export PATH="/usr/local/opt/node@20/bin:$PATH"
+
